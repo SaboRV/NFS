@@ -42,8 +42,6 @@ tmpfs                      198M     0  198M   0% /run/user/1000
 
 #### Firewall включен на обеих станциях:
 
-root@nfss:~# yes | sudo ufw enable
-Command may disrupt existing ssh connections. Proceed with operation (y|n)? Firewall is active and enabled on system startup
 root@nfss:~# sudo ufw status numbered
 Status: active
 
@@ -67,8 +65,6 @@ Status: active
 [16] 22 (v6)                    ALLOW IN    Anywhere (v6)             
 
 
-oot@nfsc:~# yes | sudo ufw enable
-Command may disrupt existing ssh connections. Proceed with operation (y|n)? Firewall is active and enabled on system startup
 root@nfsc:~# sudo ufw status numbered
 Status: active
 
