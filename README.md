@@ -19,7 +19,7 @@ Linux nfsc 5.4.0-167-generic #184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023 x86_64
 root@nfss:~# exportfs -s
 /srv/share  192.168.56.21/32(sync,wdelay,hide,sec=sys,rw,secure,root_squash,no_all_squash)
 
-#### На клиенте мавтоматически монтируется общая папка с использованием NFSv3 по протоколу UDP:
+#### На клиенте автоматически монтируется общая папка с использованием NFSv3 по протоколу UDP:
 root@nfsc:~# mount|grep mnt
 systemd-1 on /mnt/nfs_clientshare type autofs (rw,relatime,fd=60,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=16906)
 nsfs on /run/snapd/ns/lxd.mnt type nsfs (rw)
